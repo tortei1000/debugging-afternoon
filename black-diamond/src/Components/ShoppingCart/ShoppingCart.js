@@ -3,6 +3,7 @@ import "./ShoppingCart.css";
 
 class ShoppingCart extends Component {
   render() {
+    console.log("here I am ")
     let shoppingCartDisplay = this.props.cart.map((element, index) => {
       return (
         <div className="shopping-cart-product-container" key={index}>
@@ -13,7 +14,7 @@ class ShoppingCart extends Component {
             <div className="shopping-cart-button-container">
               <button
                 className="shopping-cart-button"
-                onClick={() => this.props.removeFromCart}
+                onClick={() => this.props.removeFromCart()}
               >
                 Remove From Shopping Cart
               </button>
